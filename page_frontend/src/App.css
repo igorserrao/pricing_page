@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 32px;
+    }
+}

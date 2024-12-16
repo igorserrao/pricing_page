@@ -1,0 +1,97 @@
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 5px 0 0 0;
+}
+
+.header-row {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.toggle-switch {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    border-radius: 10em;
+}
+
+.toggle-checkbox {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 25px;
+    border-radius: 10em;
+    background: linear-gradient(to right, #5DB996, #118B50);
+}
+
+.slider:is(:hover, :focus-visible) {
+    box-shadow: 0 0 1px #118B50;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    top: 2px;
+    left: 4px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    background-color: #FBF6E9;
+    transition: 0.5s ease;
+}
+
+.toggle-checkbox:checked + .slider::before {
+    transform: translateX(25px);
+    background-color: #E3F0AF;
+}
+
+.annually-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.discount-message {
+    color: red;
+    font-size: 0.7em;
+    margin-top: 0.2em;
+    text-align: center;
+}
+
+.header-row > div {
+    display: flex;
+    align-items: center;
+}
+
+.header-row > div > p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .header-row {
+        padding: 20px;
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+}
