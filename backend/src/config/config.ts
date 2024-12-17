@@ -26,7 +26,7 @@ export const mongo = {
     MONGO_URL,
     MONGO_DATABASE,
     MONGO_OPTIONS,
-    MONGO_CONNECTION:
+    _MONGO_CONNECTION:
         'mongodb+srv://igorserrao:teste123@clientes.k7psd.mongodb.net/clientes?retryWrites=true&w=majority&appName=clientes',
 };
 
