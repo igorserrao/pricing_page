@@ -21,13 +21,12 @@ export const SERVER_PORT = process.env.SERVER_PORT
     : 12345;
 
 export const mongo = {
-    MONGO_USER,
-    MONGO_PASSWORD,
-    MONGO_URL,
-    MONGO_DATABASE,
+    MONGO_USER: process.env.MONGO_USER,
+    MONGO_PASSWORD: process.env.MONGO_PASSWORD,
+    MONGO_URL: process.env.MONGO_URL,
+    MONGO_DATABASE: process.env.MONGO_DATABASE,
     MONGO_OPTIONS,
-    _MONGO_CONNECTION:
-        'mongodb+srv://igorserrao:teste123@clientes.k7psd.mongodb.net/clientes?retryWrites=true&w=majority&appName=clientes',
+    _MONGO_CONNECTION: process.env.MONGO_CONNECTION,
 };
 
 export const server = {
